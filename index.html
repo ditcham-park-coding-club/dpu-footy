@@ -1,0 +1,45 @@
+<html>
+<head>
+  <style>
+    #player {
+      position: absolute;
+      vertical-align: middle;
+    }
+    #ball {
+      position: absolute;
+      height: 50;
+    }
+    #goal {
+      margin-left: auto;
+      margin-right: auto;
+      width: 300px; height: 50px;
+      border: 1px dashed black;
+      border-bottom: none;
+      text-align: center;
+    }
+    .dialog {
+      position: absolute;
+      top: 150px; left: 50%;
+      width: 300px;
+      margin-left: -150px;
+      cursor: default;
+      padding: 15;
+    }
+    body {
+      font-family: "Roboto", sans-serif;
+      cursor : none;
+    }
+    input {
+      font-size: 1.5em;
+    }
+  </style>
+  <script src="built-ins.js"></script>
+  <script src="program.js"></script>
+</head>
+<body>
+  <div id="goal"></div>
+  <table id="player"><td><img src="ditchamParkCursor.png"/></td><td id="name">your name here</td></table>
+  <img id="ball" src="football.png" style="top:150; left:150"/>
+  <input id="name-input" class="dialog" type="text" placeholder="Enter your name"/>
+</body>
+</html>
